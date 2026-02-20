@@ -63,3 +63,5 @@ The full Major Arcana (0–XXI):
 | XIX | The Sun |
 | XX | Judgement |
 | XXI | The World |
+
+## License

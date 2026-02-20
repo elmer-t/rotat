@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotat — Card of the Day</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Particle canvas background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">R<span class="logo-accent">O</span>TAT</h1>
+      <p class="tagline">Draw your card. Receive your day.</p>
+    </div>
+  </header>
+
+  <!-- Deck screen -->
+  <main id="deck-screen" class="screen active">
+    <div class="instruction-text">
+      <p>The cards have been shuffled. <br>Focus your intention and choose one.</p>
+    </div>
+    <div id="deck-container">
+      <!-- Cards rendered by JS -->
+    </div>
+    <div class="spread-hint">Hover to sense the energy &mdash; click to reveal</div>
+  </main>
+
+  <!-- Reading screen -->
+  <main id="reading-screen" class="screen">
+    <div class="reading-inner">
+      <div id="flip-container" class="flip-container">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img id="card-back-img" src="images/cards/back.svg" alt="Card back">
+          </div>
+          <div class="flip-card-back">
+            <img id="card-face-img" src="" alt="Tarot card">
+          </div>
+        </div>
+      </div>
+
+      <div id="card-reading" class="card-reading hidden">
+        <div class="reading-header">
+          <div class="card-number" id="card-number"></div>
+          <h2 class="card-name" id="card-name"></h2>
+          <div class="card-keywords" id="card-keywords"></div>
+        </div>
+
+        <div class="reading-divider">
+          <span class="divider-star">✦</span>
+        </div>
+
+        <div class="reading-body">
+          <p class="reading-meaning" id="card-meaning"></p>
+        </div>
+
+        <div class="reading-theme-box">
+          <p class="theme-label">Theme for Today</p>
+          <p class="reading-theme" id="card-theme"></p>
+        </div>
+
+        <button class="btn-new-reading" id="btn-new">
+          <span>Draw Another Card</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Loading overlay -->
+  <div id="loading" class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

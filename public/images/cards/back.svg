@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" width="300" height="500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0d0618"/>
+    </radialGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#4a2060" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="500" rx="16" fill="url(#bg)"/>
+  <rect width="300" height="500" rx="16" fill="url(#dots)"/>
+  <!-- Border -->
+  <rect x="8" y="8" width="284" height="484" rx="12" fill="none" stroke="#6b3fa0" stroke-width="1.5" opacity="0.7"/>
+  <rect x="14" y="14" width="272" height="472" rx="10" fill="none" stroke="#8b5cc0" stroke-width="0.5" opacity="0.4"/>
+  <!-- Central mandala -->
+  <g transform="translate(150,250)">
+    <circle r="80" fill="none" stroke="#6b3fa0" stroke-width="1" opacity="0.6"/>
+    <circle r="60" fill="none" stroke="#8b5cc0" stroke-width="0.8" opacity="0.5"/>
+    <circle r="40" fill="none" stroke="#a070d0" stroke-width="0.6" opacity="0.4"/>
+    <circle r="20" fill="#2a1040" stroke="#c090e0" stroke-width="1"/>
+    <!-- Star of 6 lines -->
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#6b3fa0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#6b3fa0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-57" y1="-57" x2="57" y2="57" stroke="#6b3fa0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="57" y1="-57" x2="-57" y2="57" stroke="#6b3fa0" stroke-width="0.5" opacity="0.5"/>
+    <!-- 8-point star -->
+    <polygon points="0,-18 4,-4 18,0 4,4 0,18 -4,4 -18,0 -4,-4" fill="#c090e0" opacity="0.8"/>
+    <!-- Outer decorative dots -->
+    <circle cx="0" cy="-80" r="3" fill="#c090e0" opacity="0.7"/>
+    <circle cx="0" cy="80" r="3" fill="#c090e0" opacity="0.7"/>
+    <circle cx="-80" cy="0" r="3" fill="#c090e0" opacity="0.7"/>
+    <circle cx="80" cy="0" r="3" fill="#c090e0" opacity="0.7"/>
+    <circle cx="-57" cy="-57" r="2" fill="#c090e0" opacity="0.5"/>
+    <circle cx="57" cy="-57" r="2" fill="#c090e0" opacity="0.5"/>
+    <circle cx="-57" cy="57" r="2" fill="#c090e0" opacity="0.5"/>
+    <circle cx="57" cy="57" r="2" fill="#c090e0" opacity="0.5"/>
+  </g>
+  <!-- Corner ornaments -->
+  <text x="20" y="40" font-family="serif" font-size="22" fill="#c090e0" opacity="0.6">✦</text>
+  <text x="264" y="40" font-family="serif" font-size="22" fill="#c090e0" opacity="0.6">✦</text>
+  <text x="20" y="490" font-family="serif" font-size="22" fill="#c090e0" opacity="0.6">✦</text>
+  <text x="264" y="490" font-family="serif" font-size="22" fill="#c090e0" opacity="0.6">✦</text>
+  <!-- Title -->
+  <text x="150" y="480" text-anchor="middle" font-family="serif" font-size="13" fill="#a070d0" letter-spacing="3" opacity="0.8">R O T A T</text>
+</svg>

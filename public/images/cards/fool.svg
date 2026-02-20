@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" width="300" height="500">
+  <defs>
+    <radialGradient id="bg-fool" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0d1a2e"/>
+      <stop offset="100%" stop-color="#06111f"/>
+    </radialGradient>
+    <filter id="glow-fool">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow-fool">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="500" rx="16" fill="url(#bg-fool)"/>
+
+  <!-- Subtle texture lines -->
+  <line x1="0" y1="125" x2="300" y2="125" stroke="#4a9fd4" stroke-width="0.3" opacity="0.15"/>
+  <line x1="0" y1="375" x2="300" y2="375" stroke="#4a9fd4" stroke-width="0.3" opacity="0.15"/>
+
+  <!-- Outer border -->
+  <rect x="8" y="8" width="284" height="484" rx="12" fill="none" stroke="#3a7fa4" stroke-width="1.5" opacity="0.8"/>
+  <rect x="13" y="13" width="274" height="474" rx="10" fill="none" stroke="#4a9fd4" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Number top -->
+  <text x="24" y="44" font-family="Georgia, serif" font-size="16" fill="#6bbfed" opacity="0.9" font-style="italic">0</text>
+
+  <!-- Corner ornaments -->
+  <text x="268" y="44" font-family="serif" font-size="14" fill="#4a9fd4" opacity="0.6" text-anchor="middle">✦</text>
+  <text x="24" y="476" font-family="Georgia, serif" font-size="16" fill="#6bbfed" opacity="0.9" font-style="italic" transform="rotate(180,24,470)">0</text>
+
+  <!-- Central symbol glow -->
+  <circle cx="150" cy="210" r="85" fill="#4a9fd4" opacity="0.04"/>
+  <circle cx="150" cy="210" r="65" fill="#4a9fd4" opacity="0.05"/>
+
+  <!-- Decorative ring -->
+  <circle cx="150" cy="210" r="85" fill="none" stroke="#3a7fa4" stroke-width="1" opacity="0.5" stroke-dasharray="4 6"/>
+  <circle cx="150" cy="210" r="65" fill="none" stroke="#4a9fd4" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Main symbol -->
+  <text x="150" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="72"
+        fill="#6bbfed" filter="url(#glow-fool)" opacity="0.95">☽</text>
+
+  <!-- Decorative dots on ring -->
+  <circle cx="150" cy="125" r="3" fill="#6bbfed" opacity="0.7"/>
+  <circle cx="150" cy="295" r="3" fill="#6bbfed" opacity="0.7"/>
+  <circle cx="65" cy="210" r="3" fill="#6bbfed" opacity="0.7"/>
+  <circle cx="235" cy="210" r="3" fill="#6bbfed" opacity="0.7"/>
+
+  <!-- Horizontal divider -->
+  <line x1="30" y1="318" x2="270" y2="318" stroke="#3a7fa4" stroke-width="0.8" opacity="0.6"/>
+  <circle cx="150" cy="318" r="3" fill="#3a7fa4" opacity="0.6"/>
+
+  <!-- Card name -->
+  <text x="150" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        fill="#6bbfed" letter-spacing="2" font-weight="bold">THE FOOL</text>
+
+  <!-- Keywords -->
+  <text x="150" y="372" text-anchor="middle" font-family="Georgia, serif" font-size="9"
+        fill="#4a9fd4" letter-spacing="1.5" opacity="0.7">BEGINNINGS  ·  INNOCENCE  ·  SPONTANEITY</text>
+
+  <!-- Bottom border accent -->
+  <line x1="60" y1="390" x2="240" y2="390" stroke="#3a7fa4" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- ROTAT label -->
+  <text x="150" y="478" text-anchor="middle" font-family="Georgia, serif" font-size="10"
+        fill="#4a9fd4" letter-spacing="4" opacity="0.5">R O T A T</text>
+</svg>
